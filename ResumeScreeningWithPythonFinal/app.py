@@ -1,14 +1,14 @@
 import streamlit as st
-import pickle
 import re
 import nltk
+import fickling
 
 nltk.download('punkt')
 nltk.download('stopwords')
 
 #loading models
-clf=pickle.load(open('clf.pkl','rb'))
-tfidfd=pickle.load(open('tfidf.pkl','rb'))
+clf=fickling.load(open('clf.pkl','rb'))
+tfidfd=fickling.load(open('tfidf.pkl','rb'))
 
 #web app
 # st.title("Resume Screening Web App")
